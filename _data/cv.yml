@@ -29,7 +29,9 @@ cv:
         studyType: PhD Student
         start_date: 2024-09
         end_date: Present
-        summary: Research Area: Reliable and efficient foundation models (multimodal LLMs and VLMs). Advisor: Prof. Taesup Kim. GPA: 4.20/4.3
+        summary: >
+          Research Area: Reliable and efficient foundation models (multimodal LLMs and VLMs).
+          Advisor: Prof. Taesup Kim. GPA: 4.20/4.3
 
       - institution: Seoul National University
         location: Seoul, Republic of Korea
@@ -37,7 +39,9 @@ cv:
         studyType: M.S.
         start_date: 2022-09
         end_date: 2024-08
-        summary: M.S. Thesis: "Don’t Put All Knowledge in One Basket: Group-wise Prompt Learning for Vision-Language Models". GPA: 4.06/4.3
+        summary: >
+          M.S. Thesis: "Don’t Put All Knowledge in One Basket: Group-wise Prompt Learning for Vision-Language Models".
+          GPA: 4.06/4.3
 
       - institution: KAIST (Korea Advanced Institute of Science and Technology)
         location: Daejeon, Republic of Korea
