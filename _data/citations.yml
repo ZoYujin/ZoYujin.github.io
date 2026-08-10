@@ -1,13 +1,17 @@
 metadata:
-  last_updated: '2026-07-08'
+  last_updated: '2026-08-10'
 papers:
   sGACyHgAAAAJ:IjCSPb-OGe4C:
-    citations: 1
+    citations: 6
     title: Retaining and Enhancing Pre-trained Knowledge in Vision-Language Models with Prompt Ensembling
     year: '2025'
   sGACyHgAAAAJ:Tyk-4Ss8FVUC:
     citations: 1
     title: Attention-space Contrastive Guidance for Efficient Hallucination Mitigation in LVLMs
+    year: '2026'
+  sGACyHgAAAAJ:W7OEmFMy1HYC:
+    citations: 0
+    title: K-EXAONE 2.0 Technical Report
     year: '2026'
   sGACyHgAAAAJ:Y0pCki6q_DkC:
     citations: 2
