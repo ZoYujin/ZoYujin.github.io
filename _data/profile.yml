@@ -1,0 +1,140 @@
+name: Yujin Jo
+role: Ph.D. Candidate in Data Science
+affiliation: Seoul National University
+photo: prof_blossom.jpeg
+
+links:
+  - label: Email
+    url: mailto:joyujin1015@snu.ac.kr
+    icon: fa-solid fa-envelope
+  - label: CV
+    url: /assets/pdf/CV_YujinJo_261006.pdf
+    icon: ai ai-cv
+  - label: Google Scholar
+    url: https://scholar.google.com/citations?user=sGACyHgAAAAJ
+    icon: ai ai-google-scholar
+  - label: GitHub
+    url: https://github.com/ZoYujin
+    icon: fa-brands fa-github
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/yujin-jo-seoul
+    icon: fa-brands fa-linkedin
+
+intro:
+  - >
+    I am a Ph.D. candidate in Data Science at Seoul National University, advised by
+    [Prof. Taesup Kim](https://snu-laal.com/) in the Learning and Adaptation Algorithms Lab.
+  - >
+    I study post-training of multimodal foundation models: how they acquire new capabilities
+    without losing existing ones, and whether their reasoning stays grounded in visual evidence.
+    Most recently, I completed a five-month research internship at LG AI Research's EXAONE Lab,
+    where I studied reinforcement-learning post-training for general-purpose vision-language models.
+  - >
+    Before entering research, I worked as a journalist at The Chosun Ilbo, reporting primarily on
+    social affairs while also covering technology and science.
+
+availability: I am looking for research internships for Summer 2027.
+
+research_intro: >
+  My work studies recurring conflicts inside foundation models and asks what training actually
+  does when two pressures pull in different directions.
+
+research_themes:
+  - left: Prior knowledge
+    right: New knowledge
+    detail: Continual learning without replay or parameter growth (ICLR 2026)
+  - left: Language priors
+    right: Visual evidence
+    detail: Training-free attention steering against hallucination (CVPR 2026 Findings)
+  - left: Fixed data mixture
+    right: Hidden curriculum
+    detail: Which data actually trains a model in multi-task RL (NeurIPS 2026 Workshops)
+
+news:
+  - date: Sep 2026
+    text: >
+      Our work on hidden curricula in vision-language RL was accepted at two NeurIPS 2026
+      workshops, VLM4RWD (Poster) and Pre-to-Post.
+  - date: Aug 2026
+    text: Finished my research internship at LG AI Research's EXAONE Lab.
+  - date: 2026
+    text: NuSA-CL was accepted at ICLR 2026, and ACG was accepted at CVPR 2026 Findings.
+
+publications:
+  - venue: NeurIPS 2026 Workshops
+    title: "When Learning Signals Persist: Hidden Curricula in Vision-Language Reinforcement Learning"
+    authors: Yujin Jo, Hyunjik Jo, Yireun Kim, Jinsik Lee, Taesup Kim
+    summary: >
+      Online filtering in group-relative RL turns a fixed data mixture into a hidden curriculum;
+      the queries that remain gradient-eligible longest are not necessarily the most useful to train on.
+    links:
+      - label: VLM4RWD
+        url: https://openreview.net/forum?id=GMleXoEnlb
+      - label: Pre-to-Post
+        url: https://openreview.net/forum?id=54IGilEzEN
+  - venue: ICLR 2026
+    title: Memory-Free Continual Learning with Null Space Adaptation for Zero-Shot Vision-Language Models
+    authors: Yujin Jo, Taesup Kim
+    summary: >
+      Treats low-energy spectral directions as writable capacity, enabling continual adaptation
+      without replay, a teacher model, task-specific modules, or parameter growth.
+    links:
+      - label: Paper
+        url: https://arxiv.org/abs/2510.21175
+      - label: Code
+        url: https://github.com/ZoYujin/NuSA-CL
+  - venue: CVPR 2026 Findings
+    title: Attention-space Contrastive Guidance for Efficient Hallucination Mitigation in LVLMs
+    authors: Yujin Jo, Sangyoon Bae, Taesup Kim
+    summary: >
+      A single-pass, training-free method that contrasts vision-conditioned and text-only
+      attention paths to keep answers grounded in visual evidence.
+    links:
+      - label: Paper
+        url: https://arxiv.org/abs/2601.13707
+  - venue: WACV 2025
+    title: Retaining and Enhancing Pre-trained Knowledge in Vision-Language Models with Prompt Ensembling
+    authors: Donggeun Kim*, Yujin Jo*, Myungjoo Lee*, Taesup Kim (* equal contribution)
+    summary: >
+      Learns diverse prompt groups with attention isolation, then ensembles them to retain and
+      improve pre-trained vision-language knowledge.
+    links:
+      - label: Paper
+        url: https://arxiv.org/abs/2412.07077
+
+experience:
+  - organization: LG AI Research, EXAONE Lab
+    period: Mar - Aug 2026
+    role: Research Intern
+    detail: RL post-training for general-purpose vision-language models.
+  - organization: Learning and Adaptation Algorithms Lab, SNU
+    period: Sep 2022 - Present
+    role: Graduate Researcher
+    detail: Reliable and efficient adaptation and post-training of vision-language models.
+  - organization: Seoul National University
+    period: Mar 2023 - Dec 2025
+    role: Teaching Assistant
+    detail: Outstanding Teaching Assistant, Ethical Implications of AI (Fall 2025).
+  - organization: The Chosun Ilbo
+    period: Dec 2018 - Aug 2022
+    role: Journalist
+    detail: Reported primarily on social affairs, with additional coverage of technology and science.
+
+education:
+  - organization: Seoul National University
+    period: Sep 2024 - Feb 2028 (Expected)
+    role: Ph.D. Candidate in Data Science
+    detail: "Advisor: Prof. Taesup Kim · GPA: 4.25/4.3"
+  - organization: Seoul National University
+    period: Sep 2022 - Aug 2024
+    role: M.S. in Data Science
+    detail: "Thesis: Group-wise Prompt Learning for Vision-Language Models · GPA: 4.06/4.3"
+  - organization: KAIST
+    period: Feb 2012 - Feb 2018
+    role: B.S. in Electrical Engineering
+
+recognition:
+  - Reviewer for NeurIPS 2026 and ICLR 2027
+  - Lecture & Research Scholarship, Seoul National University (2023, 2024)
+  - KAIST Presidential Fellowship (2012 - 2016)
+  - Talent Medal of Korea, awarded by the President of the Republic of Korea (2011)

@@ -1,19 +1,20 @@
 cv:
-  name: "Yujin Jo"
-  label: "PhD student"
-  email: "joyujin1015@gmail.com"
-  location: "Seoul, Republic of Korea"
-  image: "/assets/img/prof_blossom.jpeg"
+  name: Yujin Jo
+  label: Ph.D. Candidate in Data Science
+  email: joyujin1015@snu.ac.kr
+  location: Seoul, Republic of Korea
+  image: /assets/img/prof_blossom.jpeg
+  website: https://zoyujin.github.io
   summary: >
-    I am a Ph.D. student working on reliable and efficient foundation models, with a focus on
-    multimodal LLMs and vision–language models. My research studies how foundation models acquire,
-    preserve, and use knowledge under real-world constraints such as compute, latency, and memory.
-    Recent work spans memory-free continual adaptation, efficient hallucination mitigation, and
-    post-training / reinforcement learning for general-purpose VLMs.
+    Ph.D. candidate researching post-training of multimodal foundation models: how models acquire
+    new capabilities without losing existing ones, how reasoning remains grounded in visual
+    evidence, and how multi-task reinforcement learning redistributes learning signal across data.
 
   social_networks:
     - network: Google Scholar
       username: sGACyHgAAAAJ
+    - network: GitHub
+      username: ZoYujin
     - network: LinkedIn
       username: yujin-jo-seoul
 
@@ -26,12 +27,10 @@ cv:
       - institution: Seoul National University
         location: Seoul, Republic of Korea
         area: Data Science
-        studyType: PhD Student
+        studyType: Ph.D. Candidate
         start_date: 2024-09
-        end_date: Present
-        summary: >
-          Research Area: Reliable and efficient foundation models (multimodal LLMs and VLMs).
-          Advisor: Prof. Taesup Kim. GPA: 4.20/4.3
+        end_date: 2028-02
+        summary: "Advisor: Prof. Taesup Kim. GPA: 4.25/4.3."
 
       - institution: Seoul National University
         location: Seoul, Republic of Korea
@@ -40,8 +39,8 @@ cv:
         start_date: 2022-09
         end_date: 2024-08
         summary: >
-          M.S. Thesis: "Don’t Put All Knowledge in One Basket: Group-wise Prompt Learning for Vision-Language Models".
-          GPA: 4.06/4.3
+          Thesis: "Don't Put All Knowledge in One Basket: Group-wise Prompt Learning for
+          Vision-Language Models." GPA: 4.06/4.3.
 
       - institution: KAIST (Korea Advanced Institute of Science and Technology)
         location: Daejeon, Republic of Korea
@@ -55,19 +54,24 @@ cv:
         position: Research Intern
         location: Seoul, Republic of Korea
         start_date: 2026-03
-        end_date: Present
+        end_date: 2026-08
         highlights:
-          - Post-training for general-purpose vision-language models; reinforcement learning for visual reasoning and grounding
-          - Built diagnostic experiments and evaluation pipelines for multi-task training and analysis
+          - >
+            Worked on reinforcement-learning post-training for general-purpose vision-language
+            models across visual reasoning, perception, grounding, and document understanding.
+          - >
+            Led the analysis of hidden curricula in multi-task VLM reinforcement learning and
+            drove the project to a first-author paper accepted at two NeurIPS 2026 workshops.
 
-      - company: LAAL, Seoul National University
+      - company: Learning and Adaptation Algorithms Lab, Seoul National University
         position: Graduate Researcher
         location: Seoul, Republic of Korea
-        start_date: 2023-09
+        start_date: 2022-09
         end_date: Present
         highlights:
-          - Developed parameter-efficient adaptation methods for CLIP/VLMs (LoRA, prompt learning)
-          - Proposed training-free inference-time guidance methods to improve LVLM faithfulness
+          - >
+            Research on reliable and efficient vision-language model adaptation, spanning
+            attention interventions, parameter-efficient continual learning, and RL post-training.
 
       - company: Seoul National University
         position: Teaching Assistant
@@ -75,57 +79,72 @@ cv:
         start_date: 2023-03
         end_date: 2025-12
         highlights:
-          - Courses: Math and Statistics Foundations for Data Science; Ethical Implications of AI
-          - Received Outstanding Teaching Assistant recognition (Fall 2025)
+          - "Courses: Math and Statistics Foundations for Data Science; Ethical Implications of AI."
+          - Received Outstanding Teaching Assistant recognition in Fall 2025.
 
-      - company: Chosun Ilbo
+      - company: The Chosun Ilbo
         position: Journalist
         location: Seoul, Republic of Korea
         start_date: 2018-12
         end_date: 2022-08
         highlights:
-          - Covered technology and science topics, translated complex topics for general audiences
+          - >
+            Covered technology, science, and social issues and translated complex topics into
+            accessible narratives for a broad audience.
 
     Publications:
+      - title: "When Learning Signals Persist: Hidden Curricula in Vision-Language Reinforcement Learning"
+        authors:
+          - Yujin Jo
+          - Hyunjik Jo
+          - Yireun Kim
+          - Jinsik Lee
+          - Taesup Kim
+        publisher: NeurIPS 2026 Workshops (VLM4RWD Poster; Pre-to-Post)
+        url: https://openreview.net/forum?id=GMleXoEnlb
+
       - title: Memory-Free Continual Learning with Null Space Adaptation for Zero-Shot Vision-Language Models
         authors:
           - Yujin Jo
           - Taesup Kim
-        publisher: ICLR 2026 (Proceedings)
-        url: https://openreview.net/forum?id=tucuU4sQ3s
+        publisher: ICLR 2026
+        url: https://arxiv.org/abs/2510.21175
 
       - title: Attention-space Contrastive Guidance for Efficient Hallucination Mitigation in LVLMs
         authors:
           - Yujin Jo
           - Sangyoon Bae
           - Taesup Kim
-        publisher: arXiv
+        publisher: CVPR 2026 Findings
         url: https://arxiv.org/abs/2601.13707
 
       - title: Retaining and Enhancing Pre-trained Knowledge in Vision-Language Models with Prompt Ensembling
         authors:
-          - Donggeun Kim
-          - Yujin Jo
-          - Myungjoo Lee
+          - Donggeun Kim*
+          - Yujin Jo*
+          - Myungjoo Lee*
           - Taesup Kim
-        publisher: WACV 2025
-        url: https://doi.org/10.1109/WACV61041.2025.00542
+        publisher: WACV 2025 (* equal contribution)
+        url: https://arxiv.org/abs/2412.07077
 
     Awards:
       - title: Lecture & Research Scholarship, Seoul National University
-        date: Spring 2023
-      - title: Lecture & Research Scholarship, Seoul National University
-        date: Fall 2024
+        date: Spring 2023; Fall 2024
       - title: KAIST Presidential Fellowship
         date: 2012-2016
       - title: Talent Medal of Korea
-        date: 2011-12
+        date: Dec 2011
+
+    Academic Service:
+      - bullet: Reviewer for NeurIPS 2026 and ICLR 2027
 
     Skills:
       - name: Programming & DL Frameworks
-        keywords: "Python, C/C++, PyTorch, Hugging Face"
+        keywords: Python, PyTorch, Hugging Face, veRL
       - name: Research Tools
-        keywords: "PEFT/LoRA, VLM evaluation, RL post-training pipelines"
+        keywords: >
+          PEFT and custom adapters, inference-time attention interventions, VLM evaluation,
+          and GRPO/RLVR post-training pipelines
 
     Languages:
       - name: Korean
@@ -134,5 +153,7 @@ cv:
         summary: Fluent (TOEFL iBT 94; IELTS 7.0)
 
     Interests:
-      - name: Foundation models
-        keywords: "VLMs, LVLMs, Continual Learning, Hallucination Mitigation"
+      - name: Multimodal foundation models
+        keywords: >
+          Vision-language models, continual learning, reliable post-training, hallucination
+          mitigation, reinforcement learning, and physical AI

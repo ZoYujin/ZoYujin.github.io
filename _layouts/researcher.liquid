@@ -1,0 +1,152 @@
+---
+layout: default
+---
+{% assign profile = site.data.profile %}
+
+<div class="researcher-shell">
+  <aside class="researcher-sidebar" aria-label="Profile">
+    {% assign profile_image_path = profile.photo | prepend: 'assets/img/' %}
+    {%
+      include figure.liquid
+      loading="eager"
+      path=profile_image_path
+      class="researcher-photo"
+      sizes="(min-width: 821px) 160px, 112px"
+      alt="Portrait of Yujin Jo"
+      cache_bust=true
+    %}
+
+    <h1>{{ profile.name }}</h1>
+    <p class="researcher-role">
+      {{ profile.role -}}
+      <br>
+      {{ profile.affiliation }}
+    </p>
+
+    <nav class="researcher-links" aria-label="Profile links">
+      {% for link in profile.links %}
+        <a
+          href="{% if link.url contains '://' or link.url contains 'mailto:' %}{{ link.url }}{% else %}{{ link.url | relative_url }}{% endif %}"
+          {% if link.url contains '://' %}
+            target="_blank" rel="noopener noreferrer"
+          {% endif %}
+        >
+          <i class="{{ link.icon }}" aria-hidden="true"></i>
+          <span>{{ link.label }}</span>
+        </a>
+      {% endfor %}
+    </nav>
+  </aside>
+
+  <article class="researcher-main">
+    <section class="researcher-intro" aria-label="About">
+      {% for paragraph in profile.intro %}
+        {{ paragraph | markdownify }}
+      {% endfor %}
+      <p class="researcher-availability">
+        <span aria-hidden="true">●</span>
+        {{ profile.availability }}
+      </p>
+    </section>
+
+    <section aria-labelledby="research-heading">
+      <h2 id="research-heading">Research</h2>
+      <p>{{ profile.research_intro }}</p>
+      <div class="researcher-themes">
+        {% for theme in profile.research_themes %}
+          <div class="researcher-theme">
+            <div class="researcher-theme-axis">
+              <span>{{ theme.left }}</span>
+              <span class="researcher-theme-line" aria-hidden="true"></span>
+              <span>{{ theme.right }}</span>
+            </div>
+            <p>{{ theme.detail }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section aria-labelledby="news-heading">
+      <h2 id="news-heading">News</h2>
+      <ol class="researcher-news">
+        {% for item in profile.news %}
+          <li>
+            <time>{{ item.date }}</time><span>{{ item.text }}</span>
+          </li>
+        {% endfor %}
+      </ol>
+    </section>
+
+    <section aria-labelledby="publications-heading">
+      <div class="researcher-section-heading">
+        <h2 id="publications-heading">Selected Publications</h2>
+        <a href="{{ '/publications/' | relative_url }}">View all</a>
+      </div>
+      <div class="researcher-publications">
+        {% for publication in profile.publications limit: 3 %}
+          <article class="researcher-publication">
+            <p class="researcher-venue">{{ publication.venue }}</p>
+            <h3>{{ publication.title }}</h3>
+            <p class="researcher-authors">
+              {{ publication.authors | replace: 'Yujin Jo', '<strong>Yujin Jo</strong>' }}
+            </p>
+            <p class="researcher-summary">{{ publication.summary }}</p>
+            <p class="researcher-paper-links">
+              {% for link in publication.links %}
+                <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                  {{- link.label }}
+                  <span aria-hidden="true">↗</span></a
+                >
+              {% endfor %}
+            </p>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Experience</h2>
+      <div class="researcher-entries">
+        {% for item in profile.experience %}
+          <div class="researcher-entry">
+            <div>
+              <h3>{{ item.organization }}</h3>
+              <p>{{ item.role }}</p>
+              {% if item.detail %}
+                <p class="researcher-entry-detail">{{ item.detail }}</p>
+              {% endif %}
+            </div>
+            <time>{{ item.period }}</time>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <div class="researcher-entries">
+        {% for item in profile.education %}
+          <div class="researcher-entry">
+            <div>
+              <h3>{{ item.organization }}</h3>
+              <p>{{ item.role }}</p>
+              {% if item.detail %}
+                <p class="researcher-entry-detail">{{ item.detail }}</p>
+              {% endif %}
+            </div>
+            <time>{{ item.period }}</time>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section aria-labelledby="recognition-heading">
+      <h2 id="recognition-heading">Service & Recognition</h2>
+      <ul class="researcher-recognition">
+        {% for item in profile.recognition %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+  </article>
+</div>
