@@ -90,6 +90,8 @@ publications:
     links:
       - label: Paper
         url: https://arxiv.org/abs/2601.13707
+      - label: Code
+        url: https://github.com/ZoYujin/ACG
   - venue: WACV 2025
     title: Retaining and Enhancing Pre-trained Knowledge in Vision-Language Models with Prompt Ensembling
     authors: Donggeun Kim*, Yujin Jo*, Myungjoo Lee*, Taesup Kim (* equal contribution)
