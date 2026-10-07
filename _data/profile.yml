@@ -113,10 +113,6 @@ experience:
     period: Sep 2022 - Present
     role: Graduate Researcher
     detail: Reliable and efficient adaptation and post-training of vision-language models.
-  - organization: Seoul National University
-    period: Mar 2023 - Dec 2025
-    role: Teaching Assistant
-    detail: Outstanding Teaching Assistant, Ethical Implications of AI (Fall 2025).
   - organization: The Chosun Ilbo
     period: Dec 2018 - Aug 2022
     role: Journalist
@@ -131,7 +127,7 @@ education:
     period: Sep 2022 - Aug 2024
     role: M.S. in Data Science
     detail: "Thesis: Group-wise Prompt Learning for Vision-Language Models · GPA: 4.06/4.3"
-  - organization: KAIST
+  - organization: Korea Advanced Institute of Science and Technology (KAIST)
     period: Feb 2012 - Feb 2018
     role: B.S. in Electrical Engineering
 
