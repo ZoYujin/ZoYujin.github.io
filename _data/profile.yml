@@ -30,14 +30,16 @@ intro:
     Most recently, I completed a five-month research internship at LG AI Research's EXAONE Lab,
     where I studied reinforcement-learning post-training for general-purpose vision-language models.
   - >
-    Before entering research, I worked as a journalist at The Chosun Ilbo, reporting primarily on
-    social affairs while also covering technology and science.
+    Before entering research, I worked as a journalist at The Chosun Ilbo. In both journalism and
+    research, I have been happiest in conversations that help us understand one another and explore
+    the world and intelligence, whether human or artificial.
 
 availability: I am looking for research internships for Summer 2027.
 
 research_intro: >
-  My work studies recurring conflicts inside foundation models and asks what training actually
-  does when two pressures pull in different directions.
+  My work studies tensions in foundation-model training: preserving old knowledge while acquiring
+  new capabilities, following language priors while remaining grounded in visual evidence, and
+  allocating learning signal across competing capabilities.
 
 research_themes:
   - left: Prior knowledge
@@ -46,9 +48,9 @@ research_themes:
   - left: Language priors
     right: Visual evidence
     detail: Training-free attention steering against hallucination (CVPR 2026 Findings)
-  - left: Fixed data mixture
-    right: Hidden curriculum
-    detail: Which data actually trains a model in multi-task RL (NeurIPS 2026 Workshops)
+  - left: Reasoning-heavy tasks
+    right: Perception-heavy tasks
+    detail: Allocating learning signal across competing capabilities in multi-task RL (NeurIPS 2026 Workshops)
 
 news:
   - date: Sep 2026

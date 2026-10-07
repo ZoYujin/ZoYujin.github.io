@@ -16,7 +16,8 @@ footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: Yujin Jo, multimodal foundation models, vision-language models, continual learning, reinforcement learning
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: # no favicon until a personal mark is available
+cv_pdf: /assets/pdf/CV_YujinJo_261006.pdf
 
 url: https://ZoYujin.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
