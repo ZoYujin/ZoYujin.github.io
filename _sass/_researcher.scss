@@ -254,6 +254,11 @@
   margin-top: 0.55rem !important;
 }
 
+.researcher-paper-status {
+  color: var(--global-text-color-light);
+  font-style: italic;
+}
+
 .researcher-entries {
   display: flex;
   flex-direction: column;

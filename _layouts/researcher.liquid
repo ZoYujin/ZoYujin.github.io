@@ -91,14 +91,19 @@ layout: default
               {{ publication.authors | replace: 'Yujin Jo', '<strong>Yujin Jo</strong>' }}
             </p>
             <p class="researcher-summary">{{ publication.summary }}</p>
-            <p class="researcher-paper-links">
-              {% for link in publication.links %}
-                <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
-                  {{- link.label }}
-                  <span aria-hidden="true">↗</span></a
-                >
-              {% endfor %}
-            </p>
+            {% if publication.links or publication.status %}
+              <p class="researcher-paper-links">
+                {% for link in publication.links %}
+                  <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                    {{- link.label }}
+                    <span aria-hidden="true">↗</span></a
+                  >
+                {% endfor %}
+                {% if publication.status %}
+                  <span class="researcher-paper-status">{{ publication.status }}</span>
+                {% endif %}
+              </p>
+            {% endif %}
           </article>
         {% endfor %}
       </div>

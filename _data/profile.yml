@@ -69,11 +69,7 @@ publications:
     summary: >
       Online filtering in group-relative RL turns a fixed data mixture into a hidden curriculum;
       the queries that remain gradient-eligible longest are not necessarily the most useful to train on.
-    links:
-      - label: VLM4RWD
-        url: https://openreview.net/forum?id=GMleXoEnlb
-      - label: Pre-to-Post
-        url: https://openreview.net/forum?id=54IGilEzEN
+    status: Camera-ready version coming soon
   - venue: ICLR 2026
     title: Memory-Free Continual Learning with Null Space Adaptation for Zero-Shot Vision-Language Models
     authors: Yujin Jo, Taesup Kim
